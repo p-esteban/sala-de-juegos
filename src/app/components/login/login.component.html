@@ -1,0 +1,68 @@
+
+
+   
+  <main class="form-signin">
+    <form>
+      <p class="login-text">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x"></i>
+        </span>
+      </p>
+      <br>
+     
+      <div class="alert alert-danger text-center" role="alert" *ngIf="messageError != '' " >
+        {{messageError}}
+      </div>
+
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" [(ngModel)]="user.email" >
+        <label for="floatingInput">Email </label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" [(ngModel)]="user.pass">
+        <label for="floatingPassword">Password</label>
+      </div>
+  
+      <!-- <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div> -->
+      <br>
+      <button class="w-100 btn btn-lg btn-dark" type="submit" (click)="login()" >Iniciar Sesion</button>
+      <br>
+      <br>
+      <button class="w-100 btn btn-lg btn-secondary"  (click)="autocomplete()">Autocompletar</button>
+      <div class="register">
+      <a  class="link-secondary"  [routerLink]="['/registro']">Aun no te registraste?</a>
+    </div>
+     
+    </form>
+  </main>
+  
+  
+
+
+  
+  
+
+   
+<!-- <H2>Sala de Juegos</H2>
+<div class="login">
+  <form class="login-form">
+    <p class="login-text">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-lock fa-stack-1x"></i>
+      </span>
+    </p>
+    <input type="email" class="login-username" autofocus="true" required="true" placeholder="Email" >
+    
+    <input type="password" class="login-password" required="true" placeholder="Password" >
+    <input type="submit" name="Login" value="Login" class="login-submit" (click)="login()" />
+</form>
+</div>
+  <a href="#" class="login-forgot-pass">forgot password?</a>
+  <div class="underlay-photo"></div>
+  <div class="underlay-black"></div>  -->

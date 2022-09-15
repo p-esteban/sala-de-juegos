@@ -1,0 +1,40 @@
+<main class="form-signin">
+    <form>
+        <p class="login-text">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-sign-in " aria-hidden="true" ></i>
+        </span> 
+      </p>
+      <br>
+      <!-- <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+      <!-- <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1> -->
+  
+    <!--   <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" name="name" placeholder="User Name" >
+        <label for="floatingPassword">Usuario</label>
+      </div> -->
+      <div class="alert alert-danger text-center" role="alert" *ngIf="messageError != '' " >
+        {{messageError}}
+      </div>
+
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" [(ngModel)]="email" >
+        <label for="floatingInput">Email </label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password"[(ngModel)]="password" >
+        <label for="floatingPassword">Password</label>
+      </div>
+      
+  
+      
+      <br>
+      <button class="w-100 btn btn-lg btn-dark" type="submit" (click)="addUser()" >Registrarse</button>
+      <br>
+      <br>
+      
+      
+    </form>
+  </main>
+

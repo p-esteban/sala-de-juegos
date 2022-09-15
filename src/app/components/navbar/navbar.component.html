@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="https://i.gifer.com/origin/50/5016760dd9f147e7a445529ed8ff40de_w200.gif" width="40" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+
+
+
+
+
+        
+        
+
+
+        <div  class="navbar-brand" *ngIf="userLogged|async as user; else LoginButton">
+            <a class="navbar-brand" >{{user.email}}</a>
+            
+            <button class="btn btn-secondary" routerLink="/login" (click)="logOut()">Cerrar sesión</button>
+        </div>
+
+
+    </div>
+
+
+
+   
+
+ 
+    
+</nav>
+  
+    <ng-template #LoginButton>
+    <button class="btn btn-secondary" routerLink="/login"> Ingresar</button>
+    </ng-template>
