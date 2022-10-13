@@ -10,8 +10,7 @@ export class LogService {
   constructor(private firestore : AngularFirestore) { }
 
   login(user: any){
-    // return this.firestore.collection('logs').add(user);
-
+   
     return new Promise((resolve, rejected) =>{
       this.firestore.collection('logs').add(user)
       .then(user =>{

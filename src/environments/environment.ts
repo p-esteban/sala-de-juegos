@@ -13,7 +13,8 @@ export const environment = {
       projectId: "app-sala-de-juegos",
       storageBucket: "app-sala-de-juegos.appspot.com",
       messagingSenderId: "929187839117",
-      appId: "1:929187839117:web:47951a81c8178a01e8b6c4"
+      appId: "1:929187839117:web:47951a81c8178a01e8b6c4",
+      databaseURL:"https://app-sala-de-juegos-default-rtdb.firebaseio.com/"
     },
 };
 

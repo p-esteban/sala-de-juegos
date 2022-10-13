@@ -8,6 +8,21 @@
       </button>
   
 
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <!-- <li class="nav-item">
+            <a class="nav-link active"  href="#">Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['/sala']" >Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " [routerLink]="['/quien-soy']">Quién soy</a>
+          </li>
+        </ul>
+
+
+
 
 
 
@@ -21,6 +36,22 @@
             
             <button class="btn btn-secondary" routerLink="/login" (click)="logOut()">Cerrar sesión</button>
         </div>
+
+
+    </div>
+
+
+
+
+        
+        
+
+
+        <!-- <div  class="navbar-brand" *ngIf="userLogged|async as user; else LoginButton">
+            <a class="navbar-brand" >{{user.email}}</a>
+            
+            <button class="btn btn-secondary" routerLink="/login" (click)="logOut()">Cerrar sesión</button>
+        </div> -->
 
 
     </div>

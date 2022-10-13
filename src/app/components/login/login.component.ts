@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/service/auth.service';
 import { LogService } from 'src/app/service/log.service';
+import * as moment from 'moment';
 
 
 
@@ -40,7 +41,7 @@ export class LoginComponent implements OnInit {
   login(){
     let date = new Date();
     
-    this.userLog.date = date.toLocaleString(); //date.toLocaleString('es-ES',{dateStyle:'full'});
+    this.userLog.date = moment().format();  //date.toLocaleString(); //date.toLocaleString('es-ES',{dateStyle:'full'});
     this.userLog.name = this.user.email;
 
 
