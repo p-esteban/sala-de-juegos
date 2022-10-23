@@ -26,6 +26,8 @@ import { MayorMenorComponent } from './components/juegos/mayor-menor/mayor-menor
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PreguntadosComponent } from './components/juegos/preguntados/preguntados.component';
+import { EstadisticaComponent } from './components/estadistica/estadistica.component';
+import { AdivinaElNumeroComponent } from './components/juegos/adivina-el-numero/adivina-el-numero.component';
 
 
 
@@ -40,7 +42,9 @@ import { PreguntadosComponent } from './components/juegos/preguntados/preguntado
     ChatComponent,
     AhorcadoComponent,
     MayorMenorComponent,
-    PreguntadosComponent
+    PreguntadosComponent,
+    EstadisticaComponent,
+    AdivinaElNumeroComponent
   ],
   imports: [
     BrowserModule,

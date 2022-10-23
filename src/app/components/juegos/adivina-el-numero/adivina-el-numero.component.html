@@ -1,0 +1,17 @@
+<div class="container-fluid">
+
+    <label  >INGRESE NUMERO:  </label> 
+    
+    <input type="text"[(ngModel)]="this.numeroIngresado" name="numeroIngresado" type="text" class="form-control" style="width:50%"> 
+ 
+  
+   <button  *ngIf="this.numeroSecreto!=0" (click)="verificar()" class="verificar">Verificar</button>
+  
+     <h2><button *ngIf="this.numeroSecreto==0 " (click)="generarnumero()"  class="nuevoNumero">Nuevo numero secreto</button></h2>
+  
+     <h2><p  *ngIf="this.numeroIngresado ==0" >  Esperando que ingrese un numero</p></h2>
+ 
+    
+ 
+</div>
+ 

@@ -133,6 +133,9 @@ export class PreguntadosComponent implements OnInit {
           this.opcion4 = this.arrPregunta5[5];
           this.respuestaCorrecta = parseInt(this.arrPregunta5[6]);
         break;
+        case 6:
+          this.win();
+          break;
       
     }
   }
